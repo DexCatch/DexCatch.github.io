@@ -61,7 +61,7 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Robot Parkour Learning</h1>
+          <h1 class="title is-1 publication-title">DexCatch: Learning to Catch Arbitrary Objects with Dexterous Hands</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://ziwenzhuang.github.io/">Ziwen Zhuang</a>*&nbsp;&nbsp;
@@ -195,7 +195,7 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Parkour is a grand challenge for legged locomotion that requires robots to overcome various obstacles rapidly in complex environments. Existing methods can generate either diverse but blind locomotion skills or vision-based but specialized skills by using reference animal data or complex rewards. However, autonomous parkour requires robots to learn generalizable skills that are both vision-based and diverse to perceive and react to various scenarios. In this work, we propose a system for learning a single end-to-end vision-based parkour policy of diverse parkour skills using a simple reward without any reference motion data. We develop a reinforcement learning method inspired by direct collocation to generate parkour skills, including climbing over high obstacles, leaping over large gaps, crawling beneath low barriers, squeezing through thin slits, and running. We distill these skills into a single vision-based parkour policy and transfer it to a quadrupedal robot using its egocentric depth camera. We demonstrate that our system can empower two different low-cost robots to autonomously select and execute appropriate parkour skills to traverse challenging real-world environments.
+            Achieving human-like dexterous manipulation re- mains a crucial area of research in robotics. Compared with static grasping, dynamic dexterous manipulation can obtain more efficient task execution. For example, the throw-catching behavior has the potential to increase the picking speed without transporting objects to their destination. However, it poses a major challenge for stable control, due to a large number of dynamic contacts. In this paper, we propose a Stability- Constrained Reinforcement Learning (SCRL) algorithm to learn to catch diverse objects with the hands facing upward and sideward. The SGRL algorithm outperforms baselines by a large margin, and the learned policies show strong zero-shot transfer performance on unseen objects. Remarkably, although the object in a hand facing sideward is extremely unstable owing to the lack of support from the palm, our method can still achieve a high level of success, 52.58%, in the most challenging task. Video demonstrations of learned behaviors and the code can be found on the supplementary website.
           </p>
         </div>
       </div>

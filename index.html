@@ -24,7 +24,7 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 
-  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./fig11.ico">
 
   <meta property="og:site_name" content="Robot Parkour Learning" />
   <meta property="og:type" content="video.other" />
@@ -69,8 +69,8 @@
               <a href="">Yunzhe Zhang</a>&nbsp;&nbsp;
               <a href="">Haotian Xu</a>&nbsp;&nbsp;
               <a href="">Oluwatosin Oseni</a>&nbsp;&nbsp;
-              <a href="https://ai.stanford.edu/~cbfinn/">Ch</a>&nbsp;&nbsp;
-              <a href="https://hangzhaomit.github.io/">Hang Zhao</a>
+              <a href="">Yang Gao</a>&nbsp;&nbsp;
+              <a href="">Tao Zhang</a>
             </span>
           </div>
 
@@ -224,7 +224,155 @@
   We account for 3 Catching Scenarious
 </h2>
 
-<section class="section">
+<!-- <section class="section">
+  <div class="container">
+    <div class = "columns is-centered">
+      <div class = "column">
+        <video controls autoplay loop muted playsinline src="resources/dex/abreast/abreast_apple.mp4" \
+                poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <h3 class="title is-2" style="text-align: center;">Abreast Catch</h3>
+      </div>
+
+      <div class = "column">
+        <video controls autoplay loop muted playsinline src="resources/dex/underarm/underarm_apple.mp4" \
+                poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <h3 class="title is-2" style="text-align: center;">Underarm Catch</h3>
+      </div>
+
+      <div class = "column">
+        <video controls autoplay loop muted playsinline src="resources/dex/overarm/overarm_apple.mp4" \
+                poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      <h3 class="title is-2" style="text-align: center;">Overarm Catch</h3>
+      </div>
+    </div>
+
+  </div>
+</section> -->
+
+<!-- Over arm catch -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="title is-2" style="text-align: center;">Overam Catch</h3>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-sweep_without_exceeding">
+          <video poster="" id="sweep_without_exceeding" autoplay controls muted loop height="100%" playbackRate=2.0>
+            <source src="resources/dex/overarm/overarm_apple.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-sweep_without_touching">
+          <video poster="" id="sweep_without_touching" autoplay controls muted loop height="100%" playbackRate=2.0>
+            <source src="resources/dex/overarm/overarm_banana.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-rotate">
+          <video poster="" id="rotate" autoplay controls muted loop height="100%">
+            <source src="resources/dex/overarm/overarm_bowl.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-scene_understanding">
+          <video poster="" id="scene_understanding" autoplay controls muted loop height="100%">
+            <source src="resources/dex/overarm/overarm_mug.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-simple_manipulation">
+          <video poster="" id="simple_manipulation" autoplay controls muted loop height="100%">
+            <source src="resources/dex/overarm/overarm_peach.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-novel_adj">
+          <video poster="" id="novel_adj" autoplay controls muted loop height="100%">
+            <source src="resources/dex/overarm/overarm_pen_y.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Abreast Catch -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="title is-2" style="text-align: center;">Abreast Catch</h3>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-sweep_without_exceeding">
+          <video poster="" id="sweep_without_exceeding" autoplay controls muted loop height="100%" playbackRate=2.0>
+            <source src="resources/dex/abreast/abreast_apple.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-sweep_without_touching">
+          <video poster="" id="sweep_without_touching" autoplay controls muted loop height="100%" playbackRate=2.0>
+            <source src="resources/dex/abreast/abreast_banana.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-rotate">
+          <video poster="" id="rotate" autoplay controls muted loop height="100%">
+            <source src="resources/dex/abreast/abreast_bowl.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-scene_understanding">
+          <video poster="" id="scene_understanding" autoplay controls muted loop height="100%">
+            <source src="resources/dex/abreast/abreast_peach.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-simple_manipulation">
+          <video poster="" id="simple_manipulation" autoplay controls muted loop height="100%">
+            <source src="resources/dex/abreast/abreast_pen_y.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-novel_adj">
+          <video poster="" id="novel_adj" autoplay controls muted loop height="100%">
+            <source src="resources/dex/abreast/abreast_scissors.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Under Arm Catch -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="title is-2" style="text-align: center;">Underarm Catch</h3>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-sweep_without_exceeding">
+          <video poster="" id="sweep_without_exceeding" autoplay controls muted loop height="100%" playbackRate=2.0>
+            <source src="resources/dex/underarm/underarm_apple.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-sweep_without_touching">
+          <video poster="" id="sweep_without_touching" autoplay controls muted loop height="100%" playbackRate=2.0>
+            <source src="resources/dex/underarm/underarm_banana.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-rotate">
+          <video poster="" id="rotate" autoplay controls muted loop height="100%">
+            <source src="resources/dex/underarm/underarm_bowl.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-scene_understanding">
+          <video poster="" id="scene_understanding" autoplay controls muted loop height="100%">
+            <source src="resources/dex/underarm/underarm_peach.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-simple_manipulation">
+          <video poster="" id="simple_manipulation" autoplay controls muted loop height="100%">
+            <source src="resources/dex/underarm/underarm_pen_z.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-novel_adj">
+          <video poster="" id="novel_adj" autoplay controls muted loop height="100%">
+            <source src="resources/dex/underarm/underarm_scissors.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section">
   <div class="container">
     <h3 class="title is-2" style="text-align: center;">Abreast Catch</h3>
     <div class="columns is-centered">
@@ -243,18 +391,18 @@
         <video controls autoplay loop muted playsinline src="resources/dex/abreast/abreast_mug.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
-    <!-- <div class="columns is-centered">
+    <div class="columns is-centered">
       <div class="column is-full-width is-centered has-text-centered">
         <video controls autoplay loop muted playsinline src="./resources/climb/climb_night_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
       <div class="column is-full-width is-centered has-text-centered">
         <video controls autoplay loop muted playsinline src="./resources/climb/go1_climb_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
-    </div> -->
+    </div>
   </div>
-</section>
+</section> -->
 
-<section class="section">
+<!-- <section class="section">
   <div class="container">
     <h3 class="title is-2" style="text-align: center;">Underarm Catch</h3>
     <div class="columns is-centered">
@@ -274,9 +422,9 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
-<section class="section">
+<!-- <section class="section">
   <div class="container">
     <h3 class="title is-2" style="text-align: center;">Overarm Catch</h3>
     <div class="columns is-centered">
@@ -296,9 +444,9 @@
       </div>
     </div>
   </div>
-</section>
+</section>  -->
 
-<section class="section">
+<!-- <section class="section">
   <div class="container">
     <h2 class="title is-2" style="text-align: center;">Tilt</h2>
     <div class="columns is-centered">
@@ -310,7 +458,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="section">
   <div class="container">
@@ -319,18 +467,32 @@
       <div class="column is-two-thirds">
         <div class="content has-text-justified">
         <p>
-          We Categorise Objects based on the distribution namely <strong>Elenongated</strong> objects ( Banana, Pen ), <strong>Flat</strong>  objects (Keyboards) and <strong>Regular</strong> objects  that do not fit in the previous categories (apples, cups)
-         </p>
+          We Categorise Objects based on the distribution namely <strong>Elenongated</strong> objects e.g  Banana, Pen, <strong>Flat</strong> 
+           objects like Keyboards and <strong>Regular</strong> objects  that do not fit in the previous categories e.g apples, cups and our algorithm 
+           generalises across these 3 categories
+        </p>
         </div>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/retry/retry_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls loop muted playsinline src="resources/dex/overarm/overarm_pen_y.mp4" \
+                poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <h2 class ="is-centered">Elongated ( Pen )</h2>
       </div>
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/retry/retry_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls loop muted playsinline src="resources/dex/overarm/overarm_pie.mp4" \
+                poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <h2 class ="is-centered">Flat ( Pie )</h2>
       </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls loop muted playsinline src="resources/dex/overarm/overarm_apple.mp4" \
+                poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <h2 class ="is-centered">Regular ( Apple )</h2>
+      </div>
+      <!-- <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/retry/retry_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div> -->
     </div>
   </div>
 </section>

@@ -64,8 +64,8 @@
           <h1 class="title is-1 publication-title">DexCatch: Learning to Catch Arbitrary Objects with Dexterous Hands</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="">Fengbo Lan</a>&nbsp;&nbsp;
-              <a href="https://Shengjiewang-Jason.github.io">Shengjie Wang</a>&nbsp;&nbsp;
+              <a href="">Fengbo Lan</a>*&nbsp;&nbsp;
+              <a href="https://Shengjiewang-Jason.github.io">Shengjie Wang</a>*&nbsp;&nbsp;
               <a href="">Yunzhe Zhang</a>&nbsp;&nbsp;
               <a href="">Haotian Xu</a>&nbsp;&nbsp;
               <a href="">Oluwatosin Oseni</a>&nbsp;&nbsp;
@@ -74,10 +74,16 @@
             </span>
           </div>
 
-          <!-- University Logo
-          <div class="column">
-              <image src="./static/images/logo.jpg" style="width: 60%;"></image>
-          </div> -->
+          <!-- University Logo -->
+          <div class="columns is-centered">
+            <div class ="column">
+              <image src="resources/logo.png" style="width: 60%; margin-top: 40px; height: 50px;"></image>
+            </div>
+            <div class ="column">
+              <image src="resources/tsingua_logo.png" style="width: 60%;"></image>
+            </div>
+            
+          </div>
 
           <!-- Confrence name -->
           <!-- <div class="is-size-4 publication-authors">
@@ -496,8 +502,49 @@
     </div>
   </div>
 </section>
-
+<!-- <section class="section">
+  <div class = "container">
+    <h2 class="title is-2" style="text-align: center;">Method</h2>
+    <img src="resources/fig3.png" alt="Description" width="1000" height="1000" style="display: block; margin: auto;">
+  </br>
+    <h2 class="title is-4" style="text-align: center;">Stage 1: Point Cloud Feature Extraction</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-justified">
+          <p>
+            The initial step involves extracting point cloud features using the PointClipV2. Followed by applying PCA to reduce 
+            dimensionality 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
 <section class="section">
+  <div class = "container">
+    <h2 class="title is-2" style="text-align: center;">Method</h2>
+    <img src="resources/fig3.png" alt="Description" width="1000" height="1000" style="display: block; margin: auto;">
+  </br>
+    <h2 class="title is-4" style="text-align: center;">Algorithm Overview</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-justified">
+          <p>
+            The SCRL algorithm takes as input the environmental observation and the point cloud feature of the object. 
+            Then, it learns the catching policy for dexterous hands through an Actor-Critic structure. B: The Lyapunov
+             function, the policy function and the value function are estimated using neural networks. Their network 
+             structures are similar, and the only difference is the dimension of the output. For example, the Lyapunov 
+             function contains a linear layer, a batch normalization layer, and a penultimate normalization layer, and 
+             the last linear layer takes a scalar as output.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section">
   <div class="container">
     <h2 class="title is-2" style="text-align: center;">Method</h2>
     <h2 class="title is-4" style="text-align: center;">Stage 1: RL Pre-training with Soft Dynamics Constraints</h2>
@@ -546,8 +593,8 @@
       </div>
     </div>
   </div>
-</section>
-
+</section> -->
+<!-- 
 <section class="section">
   <div class="container">
     <h2 class="title is-2" style="text-align: center;">Failure Cases</h2>
@@ -578,7 +625,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section class="section" id="BibTeX">

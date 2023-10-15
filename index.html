@@ -212,15 +212,7 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Achieving human-like dexterous manipulation re- mains a crucial area of research in robotics. Compared with static grasping,
-             dynamic dexterous manipulation can obtain more efficient task execution. For example, the throw-catching behavior has the 
-             potential to increase the picking speed without transporting objects to their destination. However, it poses a major
-              challenge for stable control, due to a large number of dynamic contacts. In this paper, we propose a Stability- Constrained 
-              Reinforcement Learning (SCRL) algorithm to learn to catch diverse objects with the hands facing upward and sideward. 
-              The SGRL algorithm outperforms baselines by a large margin, and the learned policies show strong zero-shot transfer
-               performance on unseen objects. Remarkably, although the object in a hand facing sideward is extremely unstable owing
-                to the lack of support from the palm, our method can still achieve a high level of success, 52.58%, in the most challenging 
-                task.
+            Achieving human-like dexterous manipulation remains a crucial area of research in robotics. Current research focuses on improving the success rate of pick-and-place tasks. Compared with pick-and-place, throw-catching behavior has the potential to increase picking speed without transporting objects to their destination. However, dynamic dexterous manipulation poses a major challenge for stable control due to a large number of dynamic contacts. In this paper, we propose a Stability-Constrained Reinforcement Learning (SCRL) algorithm to learn to catch diverse objects with dexterous hands. The SCRL algorithm outperforms baselines by a large margin, and the learned policies show strong zero-shot transfer performance on unseen objects. Remarkably, even though the object in a hand facing sideward is extremely unstable due to the lack of support from the palm, our method can still achieve a high level of success in the most challenging task.
           </p>
         </div>
       </div>
@@ -485,7 +477,7 @@
     </div>
     <div class="columns is-centered">
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay muted playsinline src="resources/dex/overarm/overarm_pen_y.mp4" \
+        <video controls autoplay loop muted playsinline src="resources/dex/overarm/overarm_pen_y.mp4" \
                 poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
         <h2 class ="is-centered">Elongated ( Pen )</h2>
       </div>
